@@ -1,8 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# vim: ai ts=4 sts=4 et sw=4 nu
+
 """rtfw - Port of PyRTF 0.45: Rich Text Format Document Generation
 
 PyRTF is a pure python module for the efficient generation of rich text format
 documents. Supports styles, tables, cell merging, jpg and png images and tries
 to maintain compatibility with as many RTF readers as possible. """
+
+import  sys
+
+from distutils.core import setup
 
 classifiers = """\
 Development Status :: 4 - Beta
@@ -13,9 +21,6 @@ Programming Language :: Python
 License :: OSI Approved :: GNU General Public License (GPL)
 License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
 """
-
-import  sys
-from distutils.core import setup
 
 if sys.version_info < (2, 3):
     _setup = setup
@@ -32,7 +37,7 @@ setup(name = 'rtfw',
       author_email = 'rgaudin@gmail.com',
       url = 'https://pypi.python.org/pypi/rtfw',
       license = 'http://www.gnu.org/licenses/gpl.html',
-      install_requires = ['python-magic>=0.4.6'],
+      install_requires = ['python-magic>=0.4.6', 'rtfunicode'],
       platforms = ['Any'],
       description = doclines[0],
       classifiers = filter(None, classifiers.split('\n')),

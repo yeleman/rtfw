@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 # vim: ai ts=4 sts=4 et sw=4 nu
 
+from __future__ import (unicode_literals, absolute_import,
+                        division, print_function)
+
 """
 PropertySets group common attributes together, each property set is used to control a specific part of the rendering.
 
@@ -13,8 +16,6 @@ The TextPropertySet can be used for text or in a Paragraph Style.
 
 """
 
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
 from types import StringType, UnicodeType
 from copy import deepcopy
 

@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 # vim: ai ts=4 sts=4 et sw=4 nu
 
+from __future__ import (unicode_literals, absolute_import,
+                        division, print_function)
+
 """
 A Styles is a collection of PropertySets that can be applied to a particular RTF element.
 
@@ -10,8 +13,6 @@ At present there are only two, Text and Paragraph but ListStyles will be added s
 
 """
 
-from __future__ import (unicode_literals, absolute_import,
-                        division, print_function)
 from copy import deepcopy
 from rtfw.PropertySets import (ShadingPropertySet,
                                TextPropertySet,
