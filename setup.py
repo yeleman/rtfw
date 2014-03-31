@@ -32,7 +32,7 @@ if sys.version_info < (2, 3):
 doclines = __doc__.split("\n")
 
 setup(name = 'rtfw',
-      version = '0.1',
+      version = '0.2',
       author = 'Renaud Gaudin, Simon Cusack (original)',
       author_email = 'rgaudin@gmail.com',
       url = 'https://pypi.python.org/pypi/rtfw',
